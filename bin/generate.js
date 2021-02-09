@@ -3,9 +3,9 @@
 let chalk = require('chalk');
 let fs = require('fs');
 
-let readStreamController = fs.createReadStream('node_modules/mern-gen/generator/controller.js');
-let readStreamModel = fs.createReadStream('node_modules/mern-gen/generator/model.js');
-let readStreamRoute = fs.createReadStream('node_modules/mern-gen/generator/route.js');
+let readStreamController = fs.createReadStream('../node_modules/mern-gen/generator/controller.js');
+let readStreamModel = fs.createReadStream('../node_modules/mern-gen/generator/model.js');
+let readStreamRoute = fs.createReadStream('../node_modules/mern-gen/generator/route.js');
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout
