@@ -1,11 +1,15 @@
 {
-  "name": "@medjs/mern-gen",
+  "name": "mern-gen",
   "version": "1.0.0",
   "description": "generate template for frontend and backend MERN stack",
   "main": "src/main.js",
   "bin": {
     "create-api": "bin/create-api",
-    "create-template": "bin/create-api"
+    "create-template": "bin/create-api",
+    "create-controller": "bin/createController.js",
+    "create-model": "bin/createModel.js",
+    "create-route": "bin/createRoute.js",
+    "create-mrc": "bin/generate.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,7 +35,6 @@
   "homepage": "https://github.com/mednajjar/MERN-gen#readme",
   "dependencies": {
     "arg": "^5.0.0",
-    "chalk": "^4.1.0",
     "esm": "^3.2.25",
     "execa": "^5.0.0",
     "inquirer": "^7.3.3",
@@ -42,6 +45,10 @@
   "files": [
     "bin/",
     "src/",
-    "templates/"
-  ]
+    "templates/",
+    "generator/"
+  ],
+  "devDependencies": {
+    "chalk": "^4.1.0"
+  }
 }
