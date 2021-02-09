@@ -3,7 +3,7 @@
 let chalk = require('chalk');
 let fs = require('fs');
 
-let readStreamRoute = fs.createReadStream('node_modules/@medjs/mrc-gen/generator/route.js');
+let readStreamRoute = fs.createReadStream('node_modules/mern-gen/generator/route.js');
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout
